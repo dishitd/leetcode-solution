@@ -35,6 +35,13 @@ class SolutionTest {
         assertArrayEquals(expected, solution.anagramMappings(A, B));
     }
 
+    @Test
+    public void test938RangeSumOfBST() {
+        TreeNode root = new TreeNode(10,new TreeNode(5,new TreeNode(3),new TreeNode(7)),
+                new TreeNode(15, null, new TreeNode(18)));
+        assertEquals(32, solution.rangeSumBST(root, 7, 15));
+    }
+
 
 
 }
